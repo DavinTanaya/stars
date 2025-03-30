@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,13 +15,16 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "JasaCoding.id - Solusi Jasa Coding Profesional",
-  description: "JasaCoding.id menyediakan layanan pengembangan website, aplikasi, dan solusi IT terbaik. Dapatkan hasil berkualitas dengan tim ahli kami!",
-  keywords: "jasa coding, pengembangan website, jasa IT, solusi IT, jasa aplikasi, pengembangan software",
+  description:
+    "JasaCoding.id menyediakan layanan pengembangan website, aplikasi, dan solusi IT terbaik. Dapatkan hasil berkualitas dengan tim ahli kami!",
+  keywords:
+    "jasa coding, pengembangan website, jasa IT, solusi IT, jasa aplikasi, pengembangan software",
   authors: { name: "JasaCoding.id Team" },
   robots: "index, follow",
   openGraph: {
     title: "JasaCoding.id - Solusi Jasa Coding Profesional",
-    description: "JasaCoding.id menyediakan layanan pengembangan website, aplikasi, dan solusi IT terbaik. Dapatkan hasil berkualitas dengan tim ahli kami!",
+    description:
+      "JasaCoding.id menyediakan layanan pengembangan website, aplikasi, dan solusi IT terbaik. Dapatkan hasil berkualitas dengan tim ahli kami!",
     url: "https://jasacoding.id",
     type: "website",
     images: [
@@ -45,6 +49,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
