@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code2, Github, Linkedin, Twitter } from 'lucide-react';
+import { Code2, Instagram, Twitter, } from 'lucide-react';
 import { useTheme } from '@/contexts/ThemeContext';
+import { FaTiktok } from "react-icons/fa";
 
 export function Footer() {
   const { isDark } = useTheme();
@@ -22,25 +23,25 @@ export function Footer() {
           <div className="flex space-x-6">
             <motion.a
               whileHover={{ scale: 1.1 }}
-              href="https://github.com"
+              href="https://www.tiktok.com/@jasacoding.id"
               target="_blank"
               rel="noopener noreferrer"
               className={`${isDark ? 'text-gray-400 hover:text-blue-500' : 'text-gray-600 hover:text-blue-600'} transition-colors`}
             >
-              <Github className="w-6 h-6" />
+              <FaTiktok className="w-6 h-6" />
             </motion.a>
             <motion.a
               whileHover={{ scale: 1.1 }}
-              href="https://linkedin.com"
+              href="https://www.instagram.com/jasacodingid"
               target="_blank"
               rel="noopener noreferrer"
               className={`${isDark ? 'text-gray-400 hover:text-blue-500' : 'text-gray-600 hover:text-blue-600'} transition-colors`}
             >
-              <Linkedin className="w-6 h-6" />
+              <Instagram className="w-6 h-6" />
             </motion.a>
             <motion.a
               whileHover={{ scale: 1.1 }}
-              href="https://twitter.com"
+              href="https://x.com/JasaCodingID"
               target="_blank"
               rel="noopener noreferrer"
               className={`${isDark ? 'text-gray-400 hover:text-blue-500' : 'text-gray-600 hover:text-blue-600'} transition-colors`}
