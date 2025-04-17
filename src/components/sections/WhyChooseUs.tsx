@@ -1,0 +1,116 @@
+import React from "react";
+import { motion } from "framer-motion";
+import {
+  Shield,
+  Clock,
+  Code2,
+  Users,
+  Rocket,
+  MessageSquare,
+} from "lucide-react";
+import { useTheme } from "@/contexts/ThemeContext";
+import { useTranslation } from "@/contexts/TranslationContext";
+
+export function WhyChooseUs() {
+  const { t } = useTranslation();
+  const { isDark } = useTheme();
+
+  const features = [
+    {
+      icon: Shield,
+      title: t.whyChooseUs.features.guaranteedQuality.title,
+      description: t.whyChooseUs.features.guaranteedQuality.description,
+    },
+    {
+      icon: Clock,
+      title: t.whyChooseUs.features.onTimeDelivery.title,
+      description: t.whyChooseUs.features.onTimeDelivery.description,
+    },
+    {
+      icon: Code2,
+      title: t.whyChooseUs.features.technicalExcellence.title,
+      description: t.whyChooseUs.features.technicalExcellence.description,
+    },
+    {
+      icon: Users,
+      title: t.whyChooseUs.features.dedicatedSupport.title,
+      description: t.whyChooseUs.features.dedicatedSupport.description,
+    },
+    {
+      icon: Rocket,
+      title: t.whyChooseUs.features.scalableSolutions.title,
+      description: t.whyChooseUs.features.scalableSolutions.description,
+    },
+    {
+      icon: MessageSquare,
+      title: t.whyChooseUs.features.clearCommunication.title,
+      description: t.whyChooseUs.features.clearCommunication.description,
+    },
+  ];
+
+  return (
+    <section id="whychooseus" className="container mx-auto px-4 py-16">
+      <div className="max-w-3xl mx-auto text-center mb-12">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-3xl font-bold mb-4"
+        >
+          Why Choose Us?
+        </motion.h2>
+      </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      >
+        {features.map((feature, index) => (
+          <motion.div
+            key={feature.title}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: index * 0.1 }}
+            whileHover={{ y: -5 }}
+            className={`${
+              isDark ? "bg-gray-800" : "bg-white"
+            } p-6 rounded-xl shadow-lg relative overflow-hidden group`}
+          >
+            <div
+              className={`absolute inset-0 opacity-0 group-hover:opacity-5 transition-opacity duration-300 ${
+                isDark ? "bg-blue-500" : "bg-blue-600"
+              }`}
+              style={{
+                backgroundImage:
+                  "radial-gradient(circle at center, currentColor 1px, transparent 1px)",
+                backgroundSize: "10px 10px",
+              }}
+            />
+
+            <div className="relative">
+              <div
+                className={`p-3 rounded-lg inline-block ${
+                  isDark ? "bg-blue-500/10" : "bg-blue-600/10"
+                } mb-4`}
+              >
+                <feature.icon
+                  className={`w-6 h-6 ${
+                    isDark ? "text-blue-500" : "text-blue-600"
+                  }`}
+                />
+              </div>
+
+              <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
+              <p className={`${isDark ? "text-gray-400" : "text-gray-600"}`}>
+                {feature.description}
+              </p>
+            </div>
+          </motion.div>
+        ))}
+      </motion.div>
+    </section>
+  );
+}

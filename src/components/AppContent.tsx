@@ -8,6 +8,7 @@ import { ProcessFlow } from "@/components/sections/ProcessFlow";
 import { Portfolio } from "@/components/sections/Portfolio";
 import { TechStack } from "@/components/sections/TechStack";
 import { useTheme } from "@/contexts/ThemeContext";
+import { WhyChooseUs } from "./sections/WhyChooseUs";
 
 export function AppContent() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,6 +25,7 @@ export function AppContent() {
       <Services />
       <ProcessFlow />
       <TechStack />
+      <WhyChooseUs />
       <Portfolio />
       <Footer />
     </div>

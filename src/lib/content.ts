@@ -58,6 +58,76 @@ export const content = {
       ],
     },
     portfolio: {
+      title: "Our Projects",
+      subtitle:
+        "We have helped various clients achieve success with innovative and effective software solutions.",
+      projects: [
+        {
+          id: "inventory-management-system",
+          title: "Inventory Management System",
+          desc: "A web-based application for managing inventory efficiently.",
+          image: "InventoryManagementSystem.png",
+          details: {
+            challenge:
+              "Design an end-to-end inventory management solution, including CRUD functionality and analytics for decision-making.",
+            solution:
+              "Built a responsive web app with seamless user experience, integrated backend, and data visualization features.",
+            features: [
+              "Dashboard overview (total items, low stock alerts, total value)",
+              "Inventory Management (search, filter, categorize items)",
+              "Supplier Management (add, update, delete suppliers)",
+              "Customer Management (add, update, delete customers)",
+              "Analytics with interactive charts for stock and trends",
+              "History tracking for item movements (in/out stock)",
+              "Export reports as PDF",
+            ],
+            technologies: [
+              "React",
+              "TypeScript",
+              "Tailwind CSS",
+              "Framer Motion",
+              "Recharts",
+              "jspdf",
+              "Express.js",
+              "PostgreSQL",
+            ],
+          },
+        },
+        {
+          id: "nexus-protocol",
+          title: "Nexus Protocol",
+          desc: "A platform to create AI agents for crypto monitoring and blockchain analysis.",
+          image: "NexusProtocol.png",
+          details: {
+            challenge:
+              "Develop a platform to simulate AI-driven insights into cryptocurrency trends.",
+            solution:
+              "Implemented real-time data visualization and AI-agent simulation with APIs.",
+            features: [
+              "AI Agent creation for market monitoring",
+              "Integration with TradingView API for live charts",
+              "Blockchain activity tracking with Ethers.js",
+              "Interactive 3D elements using Three.js",
+              "Network statistics and governance modules",
+              "Documentation and onboarding guides",
+            ],
+            technologies: [
+              "React",
+              "TypeScript",
+              "Tailwind CSS",
+              "Three.js & React Three Fiber",
+              "Framer Motion",
+              "Lightweight Charts",
+              "Ethers.js",
+              "TradingView API",
+              "Express.js",
+              "MongoDB (via Mongoose)",
+            ],
+          },
+        },
+      ],
+    },
+    whyChooseUs: {
       features: {
         guaranteedQuality: {
           title: "Guaranteed Quality",
@@ -179,6 +249,76 @@ export const content = {
       ],
     },
     portfolio: {
+      title: "Proyek Kami",
+      subtitle:
+        "Kami telah membantu berbagai klien mencapai kesuksesan dengan solusi perangkat lunak yang inovatif dan efektif.",
+      projects: [
+        {
+          id: "inventory-management-system",
+          title: "Sistem Manajemen Inventaris",
+          desc: "Aplikasi berbasis web untuk mengelola inventaris dengan efisien.",
+          image: "InventoryManagementSystem.png",
+          details: {
+            challenge:
+              "Merancang solusi manajemen inventaris end-to-end, termasuk fungsionalitas CRUD dan analitik untuk pengambilan keputusan.",
+            solution:
+              "Dibuat aplikasi web responsif dengan pengalaman pengguna yang mulus, backend yang terintegrasi, dan fitur visualisasi data.",
+            features: [
+              "Ikhtisar dashboard (total barang, notifikasi stok rendah, total nilai barang)",
+              "Manajemen Inventaris (pencarian, filter, pengelompokan barang)",
+              "Manajemen Pemasok (tambah, perbarui, hapus data pemasok)",
+              "Manajemen Pelanggan (tambah, perbarui, hapus data pelanggan)",
+              "Analitik dengan grafik interaktif untuk stok dan tren",
+              "Pelacakan riwayat pergerakan barang (masuk/keluar stok)",
+              "Ekspor laporan dalam format PDF",
+            ],
+            technologies: [
+              "React",
+              "TypeScript",
+              "Tailwind CSS",
+              "Framer Motion",
+              "Recharts",
+              "jspdf",
+              "Express.js",
+              "PostgreSQL",
+            ],
+          },
+        },
+        {
+          id: "nexus-protocol",
+          title: "Nexus Protocol",
+          desc: "Platform untuk membuat agen AI guna memantau kripto dan menganalisis blockchain.",
+          image: "NexusProtocol.png",
+          details: {
+            challenge:
+              "Mengembangkan platform untuk mensimulasikan wawasan berbasis AI tentang tren cryptocurrency.",
+            solution:
+              "Mengimplementasikan visualisasi data real-time dan simulasi agen AI menggunakan API.",
+            features: [
+              "Pembuatan Agen AI untuk pemantauan pasar",
+              "Integrasi dengan TradingView API untuk grafik real-time",
+              "Pelacakan aktivitas blockchain dengan Ethers.js",
+              "Elemen 3D interaktif menggunakan Three.js",
+              "Statistik jaringan dan modul tata kelola",
+              "Dokumentasi dan panduan onboarding",
+            ],
+            technologies: [
+              "React",
+              "TypeScript",
+              "Tailwind CSS",
+              "Three.js & React Three Fiber",
+              "Framer Motion",
+              "Lightweight Charts",
+              "Ethers.js",
+              "TradingView API",
+              "Express.js",
+              "MongoDB (via Mongoose)",
+            ],
+          },
+        },
+      ],
+    },
+    whyChooseUs: {
       features: {
         guaranteedQuality: {
           title: "Kualitas Terjamin",
